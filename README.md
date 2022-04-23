@@ -2,13 +2,31 @@
 
 El proyecto es una API REST de una clínica odontológica en proceso.
 
-Una vez que la aplicación esté corriendo, ingresar a la url [http://localhost:8080](http://localhost:8080/swagger-ui.html)
-
 ## Instalación
 Una vez clonado el proyecto ejecutar el comando:
 ```bash
 mvn clean install
 ```
+## Consumo desde Postman
+
+En el repositorio se encuentran los archivos: 
+- odontologo.postman_collection.json
+- pacientes.postman_collection.json
+- token.postman_collection.json
+- turno.postman_collection.json
+
+1. Realizar la importación a Postman. 
+2. Generar el token, me devolvera un objeto  
+3. Copiar el valor del atributo `access_token`
+4. En `Headers` de cada peticion de odontologo, pacientes y turnos pegar el valor del atributo `access_token` en value siempre conservando la palabra `Bearer` y como key `Authorization`:
+![img.png](img.png)
+5. Cada token tiene una duración de 30 min. 
+
+## Consumo desde FrontEnd
+
+Una vez que la aplicación backend esté corriendo y el repositorio [https://github.com/emelyvera/reserva-turnos-frontEnd](https://github.com/emelyvera/reserva-turnos-frontEnd) este clonado. 
+Se podra realizar el consumo de la API REST.
+
 
 ## Endpoints
 ### Odontólogos
