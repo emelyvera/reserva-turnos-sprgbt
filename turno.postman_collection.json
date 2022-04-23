@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "05acaa52-049c-4dbc-a78b-b53ec40ec1bd",
+		"name": "turno",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ObtenerT",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzZXJ2YXR1cm5vc3Jlc291cmNlaWQiXSwidXNlcl9uYW1lIjoidXNlcnRlc3QxIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTY1MDcyNTcxMiwiYXV0aG9yaXRpZXMiOlsiVVNFUiIsIkFETUlOIl0sImp0aSI6IjhkMThiMTIzLWJjNzAtNGE5Mi05ZWE4LTUyYTQ3M2MyY2YzOCIsImNsaWVudF9pZCI6InJlc2VydmF0dXJub3MifQ._ss5SYOMCqoYiLlmwiJTCKxN4z1-NXFejbpCqOgNN9s",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/turnos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"turnos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearT",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzZXJ2YXR1cm5vc3Jlc291cmNlaWQiXSwidXNlcl9uYW1lIjoidXNlcnRlc3QxIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTY1MDcyNTcxMiwiYXV0aG9yaXRpZXMiOlsiVVNFUiIsIkFETUlOIl0sImp0aSI6IjhkMThiMTIzLWJjNzAtNGE5Mi05ZWE4LTUyYTQ3M2MyY2YzOCIsImNsaWVudF9pZCI6InJlc2VydmF0dXJub3MifQ._ss5SYOMCqoYiLlmwiJTCKxN4z1-NXFejbpCqOgNN9s",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"odontologoDto\": {\r\n        \"id\": 1\r\n    },\r\n    \"pacienteDto\": {\r\n        \"id\": 1\r\n    },\r\n    \"fechaHora\": \"2022-04-20T11:00:00.000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/turnos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"turnos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ActualizarT",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzZXJ2YXR1cm5vc3Jlc291cmNlaWQiXSwidXNlcl9uYW1lIjoidXNlcnRlc3QxIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTY1MDcyNTcxMiwiYXV0aG9yaXRpZXMiOlsiVVNFUiIsIkFETUlOIl0sImp0aSI6IjhkMThiMTIzLWJjNzAtNGE5Mi05ZWE4LTUyYTQ3M2MyY2YzOCIsImNsaWVudF9pZCI6InJlc2VydmF0dXJub3MifQ._ss5SYOMCqoYiLlmwiJTCKxN4z1-NXFejbpCqOgNN9s",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"odontologoDto\": {\r\n        \"id\": 2\r\n    },\r\n    \"pacienteDto\": {\r\n        \"id\": 2\r\n    },\r\n    \"fechaHora\": \"2022-04-20T11:00:00.000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/turnos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"turnos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarT",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/turnos?Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzZXJ2YXR1cm5vc3Jlc291cmNlaWQiXSwidXNlcl9uYW1lIjoidXNlcnRlc3QxIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTY1MDcyNTcxMiwiYXV0aG9yaXRpZXMiOlsiVVNFUiIsIkFETUlOIl0sImp0aSI6IjhkMThiMTIzLWJjNzAtNGE5Mi05ZWE4LTUyYTQ3M2MyY2YzOCIsImNsaWVudF9pZCI6InJlc2VydmF0dXJub3MifQ._ss5SYOMCqoYiLlmwiJTCKxN4z1-NXFejbpCqOgNN9s",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"turnos"
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzZXJ2YXR1cm5vc3Jlc291cmNlaWQiXSwidXNlcl9uYW1lIjoidXNlcnRlc3QxIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTY1MDcyNTcxMiwiYXV0aG9yaXRpZXMiOlsiVVNFUiIsIkFETUlOIl0sImp0aSI6IjhkMThiMTIzLWJjNzAtNGE5Mi05ZWE4LTUyYTQ3M2MyY2YzOCIsImNsaWVudF9pZCI6InJlc2VydmF0dXJub3MifQ._ss5SYOMCqoYiLlmwiJTCKxN4z1-NXFejbpCqOgNN9s"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

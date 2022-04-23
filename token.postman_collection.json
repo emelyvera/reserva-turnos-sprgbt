@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "5496bba1-f86c-4484-8787-d147b2abe74d",
+		"name": "token",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Generar_Token",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "r3serv4tur5os",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "reservaturnos",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "usertest1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/oauth/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"oauth",
+						"token"
+					]
+				},
+				"description": "CURL:\r\n\r\ncurl --location --request POST 'http://localhost:8080/oauth/token' \\\r\n--header 'Authorization: Basic cmVzZXJ2YXR1cm5vczpyM3NlcnY0dHVyNW9z' \\\r\n--header 'Content-Type: application/x-www-form-urlencoded' \\\r\n--data-urlencode 'grant_type=password' \\\r\n--data-urlencode 'username=usertest1' \\\r\n--data-urlencode 'password=12345'"
+			},
+			"response": []
+		}
+	]
+}

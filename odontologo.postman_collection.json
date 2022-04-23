@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "3d892721-b093-4a8f-ade6-f08ed06165eb",
+		"name": "odontologo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ObtenerO",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzZXJ2YXR1cm5vc3Jlc291cmNlaWQiXSwidXNlcl9uYW1lIjoidXNlcnRlc3QxIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTY1MDY3ODg2MCwiYXV0aG9yaXRpZXMiOlsiVVNFUiIsIkFETUlOIl0sImp0aSI6IjNiYTZkMDdiLWIxOWYtNDhkZC1hMzJmLTYxOWJjMmQxMTQ3YiIsImNsaWVudF9pZCI6InJlc2VydmF0dXJub3MifQ._HgQ_Af_W_hyHgq4Jvwu7eHV-mXc7qzqn7SGcW0oEkI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/odontologos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"odontologos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearO",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzZXJ2YXR1cm5vc3Jlc291cmNlaWQiXSwidXNlcl9uYW1lIjoidXNlcnRlc3QxIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTY1MDcyNTcxMiwiYXV0aG9yaXRpZXMiOlsiVVNFUiIsIkFETUlOIl0sImp0aSI6IjhkMThiMTIzLWJjNzAtNGE5Mi05ZWE4LTUyYTQ3M2MyY2YzOCIsImNsaWVudF9pZCI6InJlc2VydmF0dXJub3MifQ._ss5SYOMCqoYiLlmwiJTCKxN4z1-NXFejbpCqOgNN9s",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Pepe\",\r\n    \"apellido\": \"Perez\",\r\n    \"matricula\": 9123\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/odontologos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"odontologos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ActualizarO",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzZXJ2YXR1cm5vc3Jlc291cmNlaWQiXSwidXNlcl9uYW1lIjoidXNlcnRlc3QxIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTY1MDcyNTcxMiwiYXV0aG9yaXRpZXMiOlsiVVNFUiIsIkFETUlOIl0sImp0aSI6IjhkMThiMTIzLWJjNzAtNGE5Mi05ZWE4LTUyYTQ3M2MyY2YzOCIsImNsaWVudF9pZCI6InJlc2VydmF0dXJub3MifQ._ss5SYOMCqoYiLlmwiJTCKxN4z1-NXFejbpCqOgNN9s",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"richard alfonso\",\r\n    \"apellido\": \"martinez valderrama\",\r\n    \"matricula\": 1234\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/odontologos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"odontologos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarO",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzZXJ2YXR1cm5vc3Jlc291cmNlaWQiXSwidXNlcl9uYW1lIjoidXNlcnRlc3QxIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTY1MDcyNTcxMiwiYXV0aG9yaXRpZXMiOlsiVVNFUiIsIkFETUlOIl0sImp0aSI6IjhkMThiMTIzLWJjNzAtNGE5Mi05ZWE4LTUyYTQ3M2MyY2YzOCIsImNsaWVudF9pZCI6InJlc2VydmF0dXJub3MifQ._ss5SYOMCqoYiLlmwiJTCKxN4z1-NXFejbpCqOgNN9s",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/odontologos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"odontologos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

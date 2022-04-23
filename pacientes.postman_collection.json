@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "d55d39cb-3629-4767-80b9-25e429d0007f",
+		"name": "pacientes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ObtenerP",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzZXJ2YXR1cm5vc3Jlc291cmNlaWQiXSwidXNlcl9uYW1lIjoidXNlcnRlc3QxIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTY1MDcyNTcxMiwiYXV0aG9yaXRpZXMiOlsiVVNFUiIsIkFETUlOIl0sImp0aSI6IjhkMThiMTIzLWJjNzAtNGE5Mi05ZWE4LTUyYTQ3M2MyY2YzOCIsImNsaWVudF9pZCI6InJlc2VydmF0dXJub3MifQ._ss5SYOMCqoYiLlmwiJTCKxN4z1-NXFejbpCqOgNN9s",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/pacientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearP",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzZXJ2YXR1cm5vc3Jlc291cmNlaWQiXSwidXNlcl9uYW1lIjoidXNlcnRlc3QxIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTY1MDcyNzg0MSwiYXV0aG9yaXRpZXMiOlsiVVNFUiIsIkFETUlOIl0sImp0aSI6ImE4YTViOGJhLTFlMDktNDEzMi1iOGFkLWM0NTAxZDUyZGEzOSIsImNsaWVudF9pZCI6InJlc2VydmF0dXJub3MifQ.PMeyosT9a4u_ULgZb29VJK04mZvL_yoXexrb7POw_u8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"richard\",\r\n    \"apellido\": \"Gianlucha\",\r\n    \"dni\": \"456987\",\r\n    \"domicilioDto\": {\r\n        \"calle\": \"cr\",\r\n        \"numero\": \"5\",\r\n        \"localidad\": \"Suba\",\r\n        \"provincia\": \"Bogota\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pacientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ActualizarP",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzZXJ2YXR1cm5vc3Jlc291cmNlaWQiXSwidXNlcl9uYW1lIjoidXNlcnRlc3QxIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTY1MDcyNTcxMiwiYXV0aG9yaXRpZXMiOlsiVVNFUiIsIkFETUlOIl0sImp0aSI6IjhkMThiMTIzLWJjNzAtNGE5Mi05ZWE4LTUyYTQ3M2MyY2YzOCIsImNsaWVudF9pZCI6InJlc2VydmF0dXJub3MifQ._ss5SYOMCqoYiLlmwiJTCKxN4z1-NXFejbpCqOgNN9s",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"nombre\": \"Juia\",\r\n    \"apellido\": \"Martinez\",\r\n    \"dni\": \"456987\",\r\n    \"fechaCreacion\": \"2015-10-30\",\r\n    \"domicilioDto\": {\r\n        \"calle\": \"cr\",\r\n        \"numero\": \"5\",\r\n        \"localidad\": \"Suba\",\r\n        \"provincia\": \"Bogota\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pacientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarP",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzZXJ2YXR1cm5vc3Jlc291cmNlaWQiXSwidXNlcl9uYW1lIjoidXNlcnRlc3QxIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTY1MDcyNTcxMiwiYXV0aG9yaXRpZXMiOlsiVVNFUiIsIkFETUlOIl0sImp0aSI6IjhkMThiMTIzLWJjNzAtNGE5Mi05ZWE4LTUyYTQ3M2MyY2YzOCIsImNsaWVudF9pZCI6InJlc2VydmF0dXJub3MifQ._ss5SYOMCqoYiLlmwiJTCKxN4z1-NXFejbpCqOgNN9s",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/pacientes/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
