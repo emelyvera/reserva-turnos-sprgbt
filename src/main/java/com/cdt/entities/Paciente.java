@@ -38,7 +38,7 @@ public class Paciente {
     private Domicilio domicilio;
 
     @JsonIgnore
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "paciente", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "paciente", fetch = FetchType.LAZY)
     private Set<Turno> turnos;
 
 }

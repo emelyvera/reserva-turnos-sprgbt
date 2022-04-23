@@ -29,7 +29,7 @@ public class Odontologo {
     private Integer matricula;
 
     @JsonIgnore
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "odontologo", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "odontologo", fetch = FetchType.LAZY)
     private Set<Turno> turnos;
 
 }
