@@ -29,6 +29,7 @@ public class Odontologo {
     private Integer matricula;
 
     @JsonIgnore
+
     @OneToMany(mappedBy = "odontologo", fetch = FetchType.LAZY)
     private Set<Turno> turnos;
 

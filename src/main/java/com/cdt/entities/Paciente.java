@@ -38,6 +38,7 @@ public class Paciente {
     private Domicilio domicilio;
 
     @JsonIgnore
+    
     @OneToMany(mappedBy = "paciente", fetch = FetchType.LAZY)
     private Set<Turno> turnos;
 
