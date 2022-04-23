@@ -27,7 +27,7 @@ En el repositorio se encuentran los archivos:
 Una vez que la aplicación backend esté corriendo y el repositorio [https://github.com/emelyvera/reserva-turnos-frontEnd](https://github.com/emelyvera/reserva-turnos-frontEnd) este clonado. 
 Se podra realizar el consumo de la API REST.
 
-#### Nota : El formato de fecha y hora en la registro de un turno se requiere ser enviado de la iguente manera: `2022-04-20T11:00:00.000` para ser recibido correctamente.
+#### Nota : El formato de fecha y hora en la registro de un turno se requiere ser enviado de la siguente manera: `2022-04-20T11:00:00.000` para ser recibido correctamente.
 
 
 ## Endpoints
